@@ -25,9 +25,9 @@ Prices are taken from the Kitty Karma price list and bundles poster. Change them
 
 ## Brand assets still to replace
 
-- **Logo**: `src/components/brand-mark.tsx` renders a script wordmark as a stand-in. Replace it with the extracted logo SVG (e.g. `public/brand/logo.svg`). The original image files were not available in the workspace when this was built.
-- **Product photography**: `src/components/product-art.tsx` draws placeholder packaging in the brand colours. Swap in real photos (e.g. `public/products/<slug>.jpg`) and keep the 5:6 aspect ratio.
-- **Favicon**: `public/brand/favicon.svg` is a placeholder "K" monogram.
+- **Logo**: the header and footer load the official logo from `public/brand/logo.svg` (path set in `src/components/brand-mark.tsx`). The file has not been added yet, because the original artwork was not available in the workspace. The logo is used as supplied and is not redrawn in code. Add the file to show it; if you supply a PNG instead, change `LOGO_SRC`.
+- **Favicon**: none set yet. Add `public/brand/favicon.png` or `.svg` from the logo and register it in `src/app/layout.tsx`.
+- **Product photography**: `src/components/product-art.tsx` draws simple packaging shapes in the brand colours. Swap in real photos (e.g. `public/products/<slug>.jpg`) and keep the 5:6 aspect ratio.
 
 ## Things to confirm before launch
 

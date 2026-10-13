@@ -23,10 +23,6 @@ export default function HomePage() {
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_80%_20%,rgb(248_166_210/0.55),transparent_70%),radial-gradient(50%_50%_at_10%_90%,rgb(191_155_191/0.35),transparent_70%)]" />
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-14 sm:px-8 md:pb-28 md:pt-20 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-6">
-            <p className="inline-flex items-center gap-2 rounded-full border border-magenta-200 bg-white/70 px-3.5 py-1.5 text-sm font-medium text-magenta-800 backdrop-blur">
-              <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-magenta-600" />
-              Pay with MTN MoMo · Delivery across Ghana
-            </p>
             <h1 className="mt-6 text-[clamp(2.6rem,6vw,4.9rem)] font-medium leading-[1.02] text-plum-950">
               Herbal care,{" "}
               <em className="font-medium italic text-magenta-600">delivered</em> to your door.
@@ -69,7 +65,6 @@ export default function HomePage() {
             <div className="relative mx-auto aspect-[4/5] w-full max-w-[34rem] overflow-hidden rounded-[2rem] bg-gradient-to-br from-magenta-600 via-magenta-700 to-plum-900 shadow-[0_40px_80px_-40px_rgb(110_20_68/0.6)]">
               <div aria-hidden="true" className="absolute -left-16 top-10 h-64 w-64 rounded-full bg-magenta-400/40 blur-3xl" />
               <div aria-hidden="true" className="absolute -bottom-20 right-0 h-72 w-72 rounded-full bg-plum-700/70 blur-3xl" />
-              <p className="absolute left-7 top-7 font-script text-4xl text-white">{brand.name}</p>
 
               <div className="absolute left-[8%] top-[18%] w-[52%] rotate-[-6deg] drop-shadow-[0_30px_30px_rgb(20_6_22/0.45)] transition-transform duration-700 ease-out hover:rotate-[-4deg]">
                 <ProductArt product={heroQarma} bare className="w-full" />

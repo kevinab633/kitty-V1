@@ -4,12 +4,10 @@
 @import "@fontsource-variable/fraunces/wght.css";
 @import "@fontsource-variable/fraunces/wght-italic.css";
 @import "@fontsource-variable/manrope/index.css";
-@import "@fontsource/pinyon-script/400.css";
 
 @theme {
   --font-sans: "Manrope Variable", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Fraunces Variable", ui-serif, Georgia, serif;
-  --font-script: "Pinyon Script", "Brush Script MT", cursive;
 
   /* Brand magenta, sampled from the price list header. */
   --color-magenta-50: #fdf2f8;

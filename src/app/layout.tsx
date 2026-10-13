@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     locale: "en_GH",
     type: "website",
   },
-  icons: { icon: "/brand/favicon.svg" },
 };
 
 export const viewport: Viewport = {

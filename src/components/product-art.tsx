@@ -56,14 +56,11 @@ function Pouch({ product, dark }: { product: Product; dark: boolean }) {
       {/* label */}
       <rect x="58" y="92" width="84" height="112" rx="5" fill={`url(#g-${product.slug})`} />
       <rect x="58" y="92" width="84" height="112" rx="5" fill={`url(#s-${product.slug})`} />
-      <text x="100" y="118" textAnchor="middle" fontFamily="var(--font-script)" fontSize="19" fill="#fff">
-        Kitty Karma
-      </text>
       {lines.map((line, i) => (
         <text
           key={line}
           x="100"
-          y={150 + i * 15}
+          y={138 + i * 16}
           textAnchor="middle"
           fontFamily="var(--font-sans)"
           fontWeight="700"
@@ -97,9 +94,6 @@ function Tub({ product }: { product: Product }) {
       <rect x="54" y="60" width="92" height="36" rx="8" fill={c.label} />
       <rect x="54" y="60" width="92" height="36" rx="8" fill="#000" fillOpacity="0.1" />
       <rect x="66" y="128" width="68" height="62" rx="6" fill={c.label} fillOpacity="0.92" />
-      <text x="100" y="150" textAnchor="middle" fontFamily="var(--font-script)" fontSize="15" fill="#fff">
-        Kitty Karma
-      </text>
       <text x="100" y="170" textAnchor="middle" fontFamily="var(--font-sans)" fontWeight="700" fontSize="10" fill="#fff" letterSpacing="0.6">
         {product.size?.toUpperCase() ?? ""}
       </text>
@@ -127,9 +121,6 @@ function Dropper({ product }: { product: Product }) {
       <rect x="60" y="106" width="80" height="136" rx="16" fill="#fff" fillOpacity="0.05" />
       {/* label */}
       <rect x="70" y="150" width="60" height="70" rx="4" fill="#FFF7EC" />
-      <text x="100" y="176" textAnchor="middle" fontFamily="var(--font-script)" fontSize="13" fill="#B63C75">
-        Kitty Karma
-      </text>
       <text x="100" y="192" textAnchor="middle" fontFamily="var(--font-sans)" fontWeight="700" fontSize="8" fill="#17402F" letterSpacing="0.5">
         OOPS! NEEM
       </text>
