@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* Self-hosted brand type (no third-party requests at runtime). */
+@import "@fontsource-variable/fraunces/wght.css";
+@import "@fontsource-variable/fraunces/wght-italic.css";
+@import "@fontsource-variable/manrope/index.css";
+@import "@fontsource/pinyon-script/400.css";
+
+@theme {
+  --font-sans: "Manrope Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces Variable", ui-serif, Georgia, serif;
+  --font-script: "Pinyon Script", "Brush Script MT", cursive;
+
+  /* Brand magenta, sampled from the price list header. */
+  --color-magenta-50: #fdf2f8;
+  --color-magenta-100: #fce7f3;
+  --color-magenta-200: #fbcfe8;
+  --color-magenta-300: #f8a6d2;
+  --color-magenta-400: #ee6fb2;
+  --color-magenta-500: #e0479a;
+  --color-magenta-600: #d42a7e;
+  --color-magenta-700: #b0206a;
+  --color-magenta-800: #8e1a57;
+  --color-magenta-900: #6e1444;
+
+  /* Plum, the deep violet from the poster backgrounds. */
+  --color-plum-50: #f8f3f8;
+  --color-plum-100: #efe3ef;
+  --color-plum-200: #dcc4dc;
+  --color-plum-300: #bf9bbf;
+  --color-plum-400: #9a6f9a;
+  --color-plum-500: #7a4f7a;
+  --color-plum-600: #5f3a5f;
+  --color-plum-700: #4a2c49;
+  --color-plum-800: #352033;
+  --color-plum-900: #2a1828;
+  --color-plum-950: #170c16;
+
+  --color-paper: #fcf8f6;
+  --color-cream: #f8efea;
+  --color-amber-brand: #e9a24e;
+  --color-mint-brand: #2f7d5e;
+
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-plum-950);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01" on;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-magenta-200);
+    color: var(--color-plum-950);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-magenta-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Themed scrollbar so the page matches the brand instead of the OS default. */
+  html {
+    scrollbar-color: var(--color-magenta-300) var(--color-cream);
+    scrollbar-width: thin;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
